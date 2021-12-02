@@ -37,6 +37,7 @@ fn part2(data: &Vec<i32>) {
     let mut previous = 0;
     let mut start = 0;
     let mut slide = 3;
+
     for _current in data {
         if slide <= data.iter().count() {
             let slides: Vec<i32> = data[start..slide].to_vec();
